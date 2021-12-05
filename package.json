@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "command line application that generates a readme file using the inquirer package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-perez1/readme-generator.git"
+  },
+  "author": "Gabriel Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel-perez1/readme-generator/issues"
+  },
+  "homepage": "https://github.com/gabriel-perez1/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
