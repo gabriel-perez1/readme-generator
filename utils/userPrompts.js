@@ -4,7 +4,7 @@ const projectPrompts = () => {
 	return inquirer.prompt([
 		{
 			type: 'input',
-			name: 'Project Title',
+			name: 'title',
 			message:'What is the title of the project?',
 			validate: titleInput => {
 				if (titleInput) {
@@ -18,7 +18,7 @@ const projectPrompts = () => {
 		
 		{
 			type: 'input',
-			name: 'Description',
+			name: 'description',
 			message: 'Enter project description',
 			validate: descritpionInput => {
 				if (descritpionInput) {
@@ -32,7 +32,7 @@ const projectPrompts = () => {
 
 		{
 			type: 'input',
-			name: 'Installation',
+			name: 'installation',
 			message: 'Enter installation instructions',
 			validate: installationInput => {
 				if (installationInput) {
@@ -46,7 +46,7 @@ const projectPrompts = () => {
 		
 		{
 			type: 'input',
-			name: 'Usage',
+			name: 'usage',
 			message: 'Enter usage information',
 			validate: usageInput => {
 				if (usageInput) {
@@ -60,7 +60,7 @@ const projectPrompts = () => {
 
 		{
 			type: 'input',
-			name: 'Contribution',
+			name: 'contribution',
 			message: 'Enter contribution guidelines',
 			validate: descritpionInput => {
 				if (descritpionInput) {
@@ -74,7 +74,7 @@ const projectPrompts = () => {
 
 		{
 			type: 'input',
-			name: 'Tests',
+			name: 'tests',
 			message: 'Enter test instructions',
 			validate: testInput => {
 				if (testInput) {
@@ -88,14 +88,14 @@ const projectPrompts = () => {
 
 		{
       type: 'checkbox',
-      name: 'Licenses',
+      name: 'licenses',
       message: 'Please select the license terms the project is licensed under',
       choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause', 'BSD-3-Clause', 'BSD-4-Clause']
     },
 
 		{
 			type: 'input',
-			name: 'Github',
+			name: 'github',
 			message: 'Enter your Github username',
 			validate: testInput => {
 				if (testInput) {
@@ -109,7 +109,7 @@ const projectPrompts = () => {
 
 		{
 			type: 'input',
-			name: 'Email',
+			name: 'email',
 			message: 'Enter your email',
 			validate: testInput => {
 				if (testInput) {
