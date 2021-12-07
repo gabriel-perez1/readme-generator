@@ -3,9 +3,11 @@ module.exports = templateData => {
 	const {title, description, ...email} = templateData;
 
 	return `
-	# Title
+	# ${title}
 
 	## Description 
+
+	${description}
 	
 	## Table of Contents
 
@@ -19,15 +21,29 @@ module.exports = templateData => {
 
 	## Installation
 
+	${installation}
+
 	## Usage 
+
+	${usage}
 
 	## License
 
+	${usage}
+
 	## Contributing
+
+	${contributioin}
 
 	## Tests
 
+	${tests}
+
 	## Questions
+
+	If you have any questions, feel free to [contact me](${email}).
+
+	[Github](${github})
 
 	`
 }

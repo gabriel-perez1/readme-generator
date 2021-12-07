@@ -20,8 +20,8 @@ const projectPrompts = () => {
 			type: 'input',
 			name: 'description',
 			message: 'Enter project description',
-			validate: descritpionInput => {
-				if (descritpionInput) {
+			validate: descriptionInput => {
+				if (descriptionInput) {
 					return true;
 				} else {
 					console.log('Please enter the project description');
@@ -120,6 +120,7 @@ const projectPrompts = () => {
 				}
 			}
 		},
-
 	])
 }
+
+module.exports = {projectPrompts}
