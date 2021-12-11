@@ -1,4 +1,4 @@
-const generateRM = () => {
+const generateRM = (answers) => {
 
 	return `
 			# ${answers.title}
