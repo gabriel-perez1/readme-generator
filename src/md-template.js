@@ -1,102 +1,48 @@
 const generateRM = (answers) => {
 
 	return `
-			# ${answers.title}
+# ${answers.title}
 
-			## Description 
+## Description 
 
-			${answers.description}
-			
-			## Table of Contents
+${answers.description}
 
-			* [Installation](#installation)
-			* [Usage](#usage)
-			* [Credits](#credits)
-			* [License](#license)
-			* [Contributing](#contributing)
-			* [Tests](#tests)
-			*[Questions](#questions)
+## Table of Contents
 
-			## Installation
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-			${answers.installation}
+## Installation
 
-			## Usage 
+${answers.installation}
 
-			${answers.usage}
+## Usage 
 
-			## License
+${answers.usage}
 
-			${answers.license}
+## License
 
-			## Contributing
+${answers.license}
 
-			${answers.contribution}
+## Contributing
 
-			## Tests
+${answers.contribution}
 
-			${answers.tests}
+## Tests
 
-			## Questions
+${answers.tests}
 
-			If you have any questions, feel free to [contact me](${answers.email}).
+## Questions
 
-			[Github](${answers.github})`
-		
+If you have any questions, feel free to [contact me](${answers.email}).
+
+[Github](${answers.github})`
+
 };
 
 module.exports = generateRM;
-
-/* module.exports = templateData => {
-	const {project} = templateData;
-	return `
-	${generateRM(project)}`
-}
-	
-	const {answer} = templateData;
-
-	return `
-		# ${title}
-
-		## Description 
-
-		${description}
-		
-		## Table of Contents
-
-		* [Installation](#installation)
-		* [Usage](#usage)
-		* [Credits](#credits)
-		* [License](#license)
-		* [Contributing](#contributing)
-		* [Tests](#tests)
-		*[Questions](#questions)
-
-		## Installation
-
-		${installation}
-
-		## Usage 
-
-		${usage}
-
-		## License
-
-		${usage}
-
-		## Contributing
-
-		${contribution}
-
-		## Tests
-
-		${tests}
-
-		## Questions
-
-		If you have any questions, feel free to [contact me](${email}).
-
-		[Github](${github})
-	`;
-};
-*/
