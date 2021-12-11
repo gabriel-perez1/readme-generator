@@ -1,6 +1,9 @@
-const inquirer = require("inquirer")
+const inquirer = require('inquirer')
+const generatePage = require('./src/md-template')
+const writeFile = require('./utils/generate-md')
 
 const projectPrompts = () => {
+
 	return inquirer.prompt([
 		{
 			type: 'input',
@@ -121,6 +124,19 @@ const projectPrompts = () => {
 			}
 		},
 	])
+	//.then (answers => {
+		//console.log(answers)
+	//})
 }
 
-projectPrompts();
+projectPrompts()
+	.then (answers => {
+		console.log(generatePage(answers))
+		return generatePage(answers);
+	})
+	.then(res => {
+		return writeFile(res);
+	})
+	.catch(err => {
+		console.log(err);
+	});
