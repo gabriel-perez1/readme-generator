@@ -2,7 +2,7 @@ const inquirer = require('inquirer')
 const generatePage = require('./src/md-template')
 const writeFile = require('./utils/generate-md')
 
-const licenseArr = ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause', 'BSD-3-Clause', 'BSD-4-Clause'];
+const licenseArr = ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause', 'BSD-3-Clause', 'Zero-Clause BSD'];
 
 const projectPrompts = () => {
 
