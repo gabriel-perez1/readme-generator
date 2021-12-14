@@ -1,7 +1,7 @@
 const generateRM = (answers) => {
 
 	return `
-# ${answers.title}
+# ${answers.title} ${answers.licenseLogo}
 
 ## Description 
 
@@ -27,7 +27,7 @@ ${answers.usage}
 
 ## License
 
-${answers.license}
+${answers.licenseText}
 
 ## Contributing
 

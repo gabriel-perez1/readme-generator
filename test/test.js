@@ -1,3 +1,4 @@
+const generateLicense = require('../src/license-template');
 const generatePage = require('../src/md-template');
 const writeFile = require('../utils/generate-md');
 const testAnswers = require ('./test-answer')

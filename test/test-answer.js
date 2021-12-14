@@ -1,5 +1,4 @@
 module.exports = {
-
   title: 'Read me generator',
   description: 'Generates rerad me',
   installation: 'npm install readme-generator',
