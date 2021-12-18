@@ -130,7 +130,7 @@ const projectPrompts = () => {
 
 projectPrompts()
 	.then (answers => {
-		console.log(answers);
+		console.log(generatePage(answers))
 		return generatePage(answers);
 	})
 	.then(res => {

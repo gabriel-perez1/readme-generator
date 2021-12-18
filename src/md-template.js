@@ -6,8 +6,8 @@ const generateRM = (answers) => {
 		licenseLogo: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
 	},
 	...answers.licenses == 'Apache-2.0' && {
-		licenseText: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)', 
-		licenseLogo: 'Distributed under the [Apache-2.0 license](https://opensource.org/licenses/Apache-2.0)'
+		licenseText: 'Distributed under the [Apache-2.0 license](https://opensource.org/licenses/Apache-2.0)', 
+		licenseLogo: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
 	},
 	...answers.licenses == 'GPL-3.0' && {
 		licenseText: 'Distributed under the [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0)', 
