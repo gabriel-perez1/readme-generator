@@ -1,6 +1,7 @@
 const inquirer = require('inquirer')
 const generatePage = require('./src/md-template')
 const writeFile = require('./utils/generate-md')
+const licenseChoice = require('./src/license-template');
 
 const licenseArr = ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause', 'BSD-3-Clause', 'Zero-Clause BSD'];
 

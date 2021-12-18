@@ -5,7 +5,7 @@ module.exports = {
   usage: 'instructions on how to use',
   contribution: 'fork the project',
   tests: 'no test',
-  licenses: [ 'MIT' ],
+  licenses: 'MIT' ,
   github: 'github-1',
   email: 'github-1@mail.com'
 }
